@@ -1,0 +1,251 @@
+
+<html>
+<head>
+<script type="text/javascript" src="app.js">
+    </script>
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body onload=final_project()>
+
+
+<div>
+<h2 class="section">PART A</h2>
+<div>
+    DSC 106 Group 43 Final Project
+</div>
+<br>
+<div>
+    <b>Project Topic: The Change of Energy Consumption of Three
+      Developing Countries (China, Mexico, South Africa) and Three Developed Countries
+      (The United States, Japan, England) From 1980 To 2019.
+</b>
+
+</div>
+
+<div>
+<h3>Plot 1:</h3>
+    <div>Problem Statement:
+        <br>
+        Explore the relationship between fossil fuels energy and renewable energy
+        consumption from 1980 to 2019 of the three developed and three developing
+        countries. (scatterrplot) (tooltips & bottons)
+
+    </div>
+    <br>
+    <div>Choice of color scheme:
+        <br>
+        This is a scatter plot that displays the relationship between renewable energy consumption and fossil fuel consumption, with each point being a recorded year.
+        Instead of focusing how this relationship changes over time, I want to highlight the difference between countries.  Each country has its own color with respect to the legend.
+        There is no significance of the color or shade I chose for each country in relation to value, I chose them so the colors are very distinct and not too bright to easily
+        distinguish the different countries.
+
+    </div>
+    <br>
+    <div>Marks and channels:
+        <br>
+        Mark: dots
+        <br>
+        Channels: Colors, position
+
+
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q1_plot" class="center_plot">
+    </div>
+    <div id="checkbox" class="center_plot">
+        <input type="checkbox" id="q1_United States" name="United States" value="United States" checked="checked">
+        <label for="United States">United States</label>
+        <input type="checkbox" id="q1_Japan" name="Japan" value="Japan" checked="checked">
+        <label for="Japan">Japan</label>
+        <input type="checkbox" id="q1_United Kingdom" name="United Kingdom" value="United Kingdom" checked="checked">
+        <label for="United Kingdom">United Kingdom</label>
+        <input type="checkbox" id="q1_China" name="China" value="China" checked="checked">
+        <label for="China">China</label>
+        <input type="checkbox" id="q1_Mexico" name="Mexico" value="Mexico" checked="checked">
+        <label for="Mexico">Mexico</label>
+        <input type="checkbox" id="q1_South Africa" name="South Africa" value="South Africa" checked="checked">
+        <label for="South Africa">South Africa</label><br>
+    </div>
+</div>
+
+<div>
+<h3>Question 2:</h3>
+    <div>
+       Problem Statement:<br>
+       Explore the change of renewable energy percentage (renewable energy
+       consumption / primary energy consumption) of the three developed and
+       developing countries from 1980 to 2019. (lineplot) (tooltips & bottons)
+    </div>
+    <br>
+    <div>Choice of color scheme:
+        <br>
+        Different colors are used to represent the array of  countries.
+        The selected color scheme is referred to as sinebow, and does well in
+        distinguishing categorical variables. Additionally, the color scheme
+        looks great and helps the user understand what is being visualized.
+        The colors are not too bright, but also not too dark as well. However,
+        there is no reasoning behind the specific hue chosen for each country,
+        only the color scheme itself.
+
+
+    </div>
+    <br>
+    <div>Marks and channels:
+        <br>
+        Mark: Line.
+        <br>
+        Channels: Color, Length.
+
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q2_plot" class="center_plot">
+    </div>
+    <div id="q2_checkbox" class="center_plot">
+        <input type="checkbox" id="q2_United States" name="United States" value="United States" checked="checked">
+        <label for="United States">United States</label>
+        <input type="checkbox" id="q2_Japan" name="Japan" value="Japan" checked="checked">
+        <label for="Japan">Japan</label>
+        <input type="checkbox" id="q2_United Kingdom" name="United Kingdom" value="United Kingdom" checked="checked">
+        <label for="United Kingdom">United Kingdom</label>
+        <input type="checkbox" id="q2_China" name="China" value="China" checked="checked">
+        <label for="China">China</label>
+        <input type="checkbox" id="q2_Mexico" name="Mexico" value="Mexico" checked="checked">
+        <label for="Mexico">Mexico</label>
+        <input type="checkbox" id="q2_South Africa" name="South Africa" value="South Africa" checked="checked">
+        <label for="South Africa">South Africa</label><br>
+    </div>
+    </div>
+
+
+
+<div>
+<h3>Question 3:</h3>
+    <div> Problem Statement:<br>
+        Explore how each type of energy consumption (coal, dydro, gas, oil,
+        renewable, nuclear, electricity) of the three developed and three
+        developing countries changes from 1980 to 2019. (Stackcolumn plot) (animation)
+
+    </div>
+    <br>
+    <div>Choice of color scheme:
+        <br>
+        I use different colors to represent different types of energy. Each color
+        is selected from the color of the material used to produce that energy, or
+        people's perception on that energy.
+        For example, I use the color green to represent renewable energy and the
+        color aqua (lightgreen) to represent hydro energy.
+
+    </div>
+    <br>
+    <div>Marks and channels:
+        <br>
+        Mark: Line.
+        <br>
+        Channels: Color, Length.
+
+
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q3_plot" class="center_plot">
+    </div>
+    <div id="radio_q3" class="center_plot">
+        <input type="radio" id="q3_US" name="q3_country" value="United States" checked="checked">
+        <label for="United States">United States</label>
+        <input type="radio" id="q3_Japan" name="q3_country" value="Japan">
+        <label for="Japan">Japan</label>
+        <input type="radio" id="q3_UK" name="q3_country" value="United Kingdom">
+        <label for="United Kingdom">United Kingdom</label>
+        <input type="radio" id="q3_China" name="q3_country" value="China">
+        <label for="China">China</label>
+        <input type="radio" id="q3_Mexico" name="q3_country" value="Mexico">
+        <label for="Mexico">Mexico</label>
+        <input type="radio" id="q3_SA" name="q3_country" value="South Africa">
+        <label for="South Africa">South Africa</label><br>
+    </div>
+</div>
+
+<div>
+<h3>Question 4:</h3>
+    <div> Problem Statement:<br>
+        Explore how each type of energy consumption per captia (coal, dydro, gas,
+        oil, renewable, nuclear, electricity) of the three developed and three
+        developing countries changes from 1980 to 2019. (streamgraph) (buttons)
+
+    </div>
+    <br>
+    <div>Choice of color scheme:
+        <br>
+        I use different colors to represent different types of energy. Each color
+        is selected from the color of the material used to produce that energy, or
+        people's perception on that energy.
+        For example, I use the color green to represent renewable energy and the
+        color aqua (lightgreen) to represent hydro energy.
+
+
+    </div>
+    <br>
+    <div>Marks and channels:
+        <br>
+        Mark: Area.
+        <br>
+        Channels: Color, Size.
+
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q4_plot" class="center_plot">
+    </div>
+    <div id="radio_q4" class="center_plot">
+      <input type="radio" id="q4_US" name="q4_country" value="United States" checked="checked">
+      <label for="United States">United States</label>
+      <input type="radio" id="q4_Japan" name="q4_country" value="Japan">
+      <label for="Japan">Japan</label>
+      <input type="radio" id="q4_UK" name="q4_country" value="United Kingdom">
+      <label for="United Kingdom">United Kingdom</label>
+      <input type="radio" id="q4_China" name="q4_country" value="China">
+      <label for="China">China</label>
+      <input type="radio" id="q4_Mexico" name="q4_country" value="Mexico">
+      <label for="Mexico">Mexico</label>
+      <input type="radio" id="q4_SA" name="q4_country" value="South Africa">
+      <label for="South Africa">South Africa</label><br>
+    </div>
+
+<div>
+<h3>Question 5:</h3>
+    <div> Problem Statement:<br>
+        Visualize the average total energy consumption per capita from 1980 to 2019
+        between the three developed and three developing countries. (boxplot)
+    </div>
+    <br>
+    <div>Choice of color scheme:
+        <br>
+        Only a single color is used here because the distinction between each boxplot
+        is already sufficiently shown by the xAxis labels.
+
+
+    </div>
+    <br>
+    <div>Marks and channels:
+        <br>
+        Mark: Lines
+        <br>
+        Channels: Length, Area, Position
+
+
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="q5_plot" class="center_plot">
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: "fit-content";
+  height: "fit-content";
+  padding: 10px;
+  color: black;
+}
+
+.q1_title { font: bold 16px sans-serif; }
+.q2_title { font: bold 16px sans-serif; }
+.q3_title { font: bold 16px sans-serif; }
+.q4_title { font: bold 16px sans-serif; }
+.q5_title { font: bold 16px sans-serif; }
+
+
+
+.coal {
+  fill: darkslategrey;
+}
+
+.hydro {
+  fill: aqua;
+}
+
+.gas {
+  fill: blue;
+}
+
+.oil {
+  fill: yellow;
+}
+
+.renewable {
+  fill: lightgreen;
+}
+
+.nuclear {
+  fill: red;
+}
